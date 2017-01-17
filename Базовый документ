@@ -3,7 +3,58 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Базовый документ </title>
+  <style>
+   table 
+    {
+     color: green;
+    }
+ </style>
  </head>
  <body>
+  <table border="0">
+  <caption>Заголовок</caption>
+   <tr bgcolor=green>
+    <th><font color=white>Страна</th>
+    <th><font color=white>Стоимость перелета из Еката</font></th>
+    <th><font color=white>Стоимость перелета из Берлина</font></th>
+    <th><font color=white>Нужна ли виза</font></th>
+    <th><font color=white>Стоимость проживания, 10 дней</font></th>
+   </tr>
+   <tr>
+    <th>Япония</th>
+    <th>540</th>
+    <th>620</th>
+    <th>да</th>
+    <th>450</th>
+   </tr>
+   <tr>
+    <th>Тайланд</th>
+    <th>480</th>
+    <th>300</th>
+    <th>да (по прилёту)</th>
+    <th>120</th>
+   </tr>
+   <tr>
+    <th>Израиль</th>
+    <th>220</th>
+    <th>265</th>
+    <th>нет</th>
+    <th>290</th>
+   </tr>
+   <tr>
+    <th>Азербайджан</th>
+    <th>240</th>
+    <th>178</th>
+    <th>нет</th>
+    <th>90-100</th>
+   </tr>
+   <tr>
+    <th>Индия</th>
+    <th>200</th>
+    <th>220</th>
+    <th>да (по прилёту)</th>
+    <th>80</th>
+   </tr>
+  </table>
  </body>
 </html>
