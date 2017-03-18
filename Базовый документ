@@ -4,56 +4,61 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Базовый документ </title>
   <style>
-   table 
+   th
+    {
+     color: white;
+     background: green;
+    }
+   td
     {
      color: green;
     }
  </style>
  </head>
  <body>
-  <table border="0">
+  <table id="tab1" border="0">
   <caption>Заголовок</caption>
-   <tr bgcolor=green>
-    <th><font color=white>Страна</th>
-    <th><font color=white>Стоимость перелета из Еката</font></th>
-    <th><font color=white>Стоимость перелета из Берлина</font></th>
-    <th><font color=white>Нужна ли виза</font></th>
-    <th><font color=white>Стоимость проживания, 10 дней</font></th>
+   <tr>
+    <th>Страна</th>
+    <th>Стоимость перелета из Еката</th>
+    <th>Стоимость перелета из Берлина</th>
+    <th>Нужна ли виза?</th>
+    <th>Стоимость проживания, 10 дней</th>
    </tr>
    <tr>
-    <th>Япония</th>
-    <th>540</th>
-    <th>620</th>
-    <th>да</th>
-    <th>450</th>
+    <td>Япония</td>
+    <td>540</td>
+    <td>620</td>
+    <td>да</td>
+    <td>450</td>
    </tr>
    <tr>
-    <th>Тайланд</th>
-    <th>480</th>
-    <th>300</th>
-    <th>да (по прилёту)</th>
-    <th>120</th>
+    <td>Тайланд</td>
+    <td>480</td>
+    <td>300</td>
+    <td>да (по прилёту)</td>
+    <td>120</td>
    </tr>
    <tr>
-    <th>Израиль</th>
-    <th>220</th>
-    <th>265</th>
-    <th>нет</th>
-    <th>290</th>
+    <td>Израиль</td>
+    <td>220</td>
+    <td>265</td>
+    <td>нет</td>
+    <td>290</td>
    </tr>
    <tr>
-    <th>Азербайджан</th>
-    <th>240</th>
-    <th>178</th>
-    <th>нет</th>
-    <th>90-100</th>
+    <td>Азербайджан</td>
+    <td>240</td>
+    <td>178</td>
+    <td>нет</td>
+    <td>90-100</td>
    </tr>
    <tr>
-    <th>Индия</th>
-    <th>200</th>
-    <th>220</th>
-    <th>да (по прилёту)</th>
-    <th>80</th>
+    <td>Индия</td>
+    <td>200</td>
+    <td>220</td>
+    <td>да (по прилёту)</td>
+    <td>80</td>
    </tr>
   </table>
  </body>
