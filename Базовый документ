@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Базовый документ </title>
   <style>
    th
@@ -16,6 +15,26 @@
  </style>
  </head>
  <body>
+  <table id="tab2" border="0">
+   <tr>
+    <th>Страна</th>
+    <th>Стоимость перелета из Еката</th>
+    <th>Стоимость перелета из Берлина</th>
+    <th>Нужна ли виза?</th>
+    <th>Стоимость проживания 10 дней</th>
+   </tr>
+   <tr>
+    <td><input type="text" maxlength="50"></td>
+    <td><input type="number"></td>
+    <td><input type="number"></td>
+    <td><select>
+     <option value="v1">Да</option>
+     <option value="v2">ДА(по прилёту)</option>
+     <option value="v3">Нет</option>
+    </select></td>
+    <td><input type="number"></td>
+  </table>
+  <p><button>добавить</button></p>
   <table id="tab1" border="0">
   <caption>Заголовок</caption>
    <tr>
@@ -23,7 +42,7 @@
     <th>Стоимость перелета из Еката</th>
     <th>Стоимость перелета из Берлина</th>
     <th>Нужна ли виза?</th>
-    <th>Стоимость проживания, 10 дней</th>
+    <th>Стоимость проживания 10 дней</th>
    </tr>
    <tr>
     <td>Япония</td>
