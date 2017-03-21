@@ -4,17 +4,40 @@
   <title> Базовый документ </title>
   <style>
    th
-    {
-     color: white;
-     background: green;
-    }
+   {
+    color: white;
+    background: green;
+   }
    td
-    {
-     color: green;
-    }
- </style>
+   {
+    color: green;
+   }
+  </style>
  </head>
  <body>
+  <script type="text/javascript">
+   function addRow(tab1)
+   {
+     var tbody = document.getElementById(tab1).getElementsByTagName("TBODY")[0];
+     var row = document.createElement("TR")
+     var td1 = document.createElement("TD")
+     var td2 = document.createElement("TD")
+     var td3 = document.createElement("TD")
+     var td4 = document.createElement("TD")
+     var td5 = document.createElement("TD")
+     td1.appendChild(document.createTextNode("column 1"))
+     td2.appendChild (document.createTextNode("column 2"))
+     td3.appendChild (document.createTextNode("column 3"))
+     td4.appendChild (document.createTextNode("column 4"))
+     td5.appendChild (document.createTextNode("column 5"))
+     row.appendChild(td1);
+     row.appendChild(td2);
+     row.appendChild(td3);
+     row.appendChild(td4);
+     row.appendChild(td5);
+     tbody.appendChild(row);
+   }
+ </script>
   <table id="tab2" border="0">
    <tr>
     <th>Страна</th>
@@ -24,15 +47,15 @@
     <th>Стоимость проживания 10 дней</th>
    </tr>
    <tr>
-    <td><input type="text" maxlength="50"></td>
-    <td><input type="number"></td>
-    <td><input type="number"></td>
-    <td><select>
+    <td id="a1"><input type="text" maxlength="50"></td>
+    <td id="a2"><input type="number"></td>
+    <td id="a3"><input type="number"></td>
+    <td id="a4"><select>
      <option value="v1">Да</option>
      <option value="v2">ДА(по прилёту)</option>
      <option value="v3">Нет</option>
     </select></td>
-    <td><input type="number"></td>
+    <td id="a5" ><input type="number"></td>
   </table>
   <p><button>добавить</button></p>
   <table id="tab1" border="0">
@@ -80,5 +103,6 @@
     <td>80</td>
    </tr>
   </table>
+  <a href="javascript://" onclick="addRow('tab1');return false;">Добавить строку</a>
  </body>
 </html>
